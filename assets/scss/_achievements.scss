@@ -1,0 +1,17 @@
+.achievements {
+  padding-top: 82px;
+  padding-bottom: 82px;
+  &-title {
+    margin-bottom: 8px;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+  }
+  &-icon {
+    margin-right: 16px;
+  }
+  &-content {
+    max-width: 540px;
+  }
+}

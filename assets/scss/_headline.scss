@@ -1,0 +1,16 @@
+.headline {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  &-title {
+    margin-bottom: 32px;
+  }
+  &-desc {
+    margin-bottom: 32px;
+  }
+  &-link {
+    color: $brand-purple;
+    i {
+      margin-left: 8px;
+    }
+  }
+}

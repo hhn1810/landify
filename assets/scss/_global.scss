@@ -1,0 +1,47 @@
+body {
+  overflow-x: hidden;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.btn {
+  display: inline-flex;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: $transition;
+  &--primary {
+    color: $default-white;
+    background-color: $brand-purple;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  &--secondary {
+    background-color: $brand-purple-100;
+    color: $brand-purple;
+    &:hover {
+      color: $brand-purple-100;
+      background-color: $brand-purple;
+    }
+  }
+}
+.align-center {
+  align-items: center;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.relative {
+  position: relative;
+}

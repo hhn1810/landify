@@ -1,0 +1,48 @@
+.mobile {
+  width: 250px;
+  box-shadow: rgba(100, 100, 111, 0.4) -6px 7px 29px 0px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+  height: 100vh;
+  padding: 30px 20px 0;
+  transition: all 0.2s linear;
+  transform: translateX(120%);
+  &-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &-link {
+    color: inherit;
+    transition: $transition;
+    &:hover {
+      color: $brand-purple;
+    }
+  }
+  &-auth {
+    margin-top: 20px;
+    width: 100%;
+    .btn {
+      width: 100%;
+    }
+    .btn + .btn {
+      margin-top: 15 px;
+    }
+  }
+  &.is-show {
+    transform: translateX(0);
+  }
+  &-close {
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    font-size: 44px;
+    cursor: pointer;
+  }
+}

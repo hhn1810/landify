@@ -1,0 +1,46 @@
+.hero {
+  padding-top: 77px;
+  padding-bottom: 77px;
+  &-content {
+    max-width: 540px;
+  }
+  &-heading {
+    margin-bottom: 16px;
+  }
+  &-lead {
+    margin-bottom: 32px;
+  }
+  &-image {
+    max-width: initial;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(320px, -50%);
+  }
+  &-circle {
+    width: 640px;
+    height: 640px;
+    background-color: $brand-purple-800;
+    border-radius: 50%;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    &-image {
+      transform: translate(399px, -48%);
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    &-image {
+      transform: translate(140px, -48%);
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &-circle {
+      width: 320px;
+      height: 320px;
+    }
+    &-image {
+      width: 118%;
+    }
+  }
+}
